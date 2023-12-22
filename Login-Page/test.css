@@ -1,0 +1,63 @@
+h1{text-align: center;}
+form{text-align: center;}
+p{text-align: center;}
+  .row {
+    margin: 0 auto;
+    width: 200px;
+    clear: both;
+    text-align: center;
+    font-family: 'Exo';
+  }
+  .topleft
+  ,.topmid
+  ,.topright{
+    background-color: rgb(215, 248, 237);
+    width: 186px;
+  }
+  .centerleft
+  ,.centermid
+  ,.centerright{
+    background-color: rgb(253, 249, 152);
+    width: 186px;
+  }
+  .downleft
+  ,.downmid
+  ,.downright{
+    background-color: rgb(249, 164, 216);
+    width: 186px;
+  }
+  .digit {
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px 15px;
+    width: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-template-columns: auto auto auto;
+    /* background-color: white; */
+    width: 590px;
+    gap:2px; 
+    /* column-gap: 2px; */
+    padding: 20px;
+    margin: 30px auto;
+    height: 370px;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  #output {
+    font-family: "Exo";
+    font-size: 2rem;
+    height: 60px;
+    font-weight: bold;
+    /* color: #1976d2; */
+  }
+  .digit:active {
+    background-color: #76af88;
+  }
+  

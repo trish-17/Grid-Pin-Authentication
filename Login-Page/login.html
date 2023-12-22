@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>NPCIL LOGIN</h1>
+    <form> 
+        <label for="Username">Username:</label> 
+        <input id="u" type="text" placeholder="Enter Username" >
+    <br>
+    </form>
+    
+    <div class="container">
+        <div class="topleft">
+          <div class="digit" >
+          </div>
+          <div class="digit" >
+          </div>
+          <div class="digit">
+          </div>
+        </div>
+        <div class="topmid">
+          <div class="digit" >
+          </div>
+          <div class="digit" >
+          </div>
+          <div class="digit">
+          </div>
+        </div>
+        <div class="topright">
+          <div class="digit">
+          </div>
+          <div class="digit">
+          </div>
+          <div class="digit">
+          </div>
+        </div>
+        <div class="topleft">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="topmid">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="topright">
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="topleft">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="topmid">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="topright">
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          
+          <div class="centerleft">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="centermid">
+            <div class="digit" >
+            </div>
+            <div class="digit" > 
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="centerright">
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="centerleft">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="centermid">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="centerright">
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="centerleft">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="centermid">
+            <div class="digit" >
+            </div>
+            <div class="digit" > 
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="centerright">
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="downleft">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="downmid">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="downright">
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+        <div class="downleft">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="downmid">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="downright">
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="downleft">
+            <div class="digit" >
+            </div>
+            <div class="digit" >
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="downmid">
+            <div class="digit" >
+            </div>
+            <div class="digit" > 
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <div class="downright">
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+            <div class="digit">
+            </div>
+          </div>
+          <br>
+          <br>
+          <div id="output"></div>
+      </div>
+
+
+    <p id="demo"></p>
+    <p>
+      <form>
+        Grid Pin:
+        <label for="Pin" input id="d"> </label>
+        <button type="button" onclick="back()">del</button>
+      </form>
+    </p>
+
+    <p id="z"></p>
+    <script> 
+    const tl = document.querySelectorAll(".topleft .digit");
+    const a = [1,2,3,4,5,6,7,8,9];
+    let x;
+    for (let i = 0; i < tl.length; i++) {
+      x=Math.floor(Math.random() * a.length);
+      tl[i].innerHTML = a[x];
+      a.splice(x,1);
+    }
+    
+    const tm = document.querySelectorAll(".topmid .digit");
+    const b = [1,2,3,4,5,6,7,8,9];
+    for (let i = 0; i < tm.length; i++) {
+      x=Math.floor(Math.random() * b.length);
+      tm[i].innerHTML = b[x];
+      b.splice(x,1);
+    }
+    
+    const tr = document.querySelectorAll(".topright .digit");
+    const c = [1,2,3,4,5,6,7,8,9];
+    for (let i = 0; i < tr.length; i++) {
+      x=Math.floor(Math.random() * c.length);
+      tr[i].innerHTML = c[x];
+      c.splice(x,1);
+    }
+    
+    const cl = document.querySelectorAll(".centerleft .digit");
+    const d = [1,2,3,4,5,6,7,8,9];
+    for (let i = 0; i < cl.length; i++) {
+      x=Math.floor(Math.random() * d.length);
+      cl[i].innerHTML = d[x];
+      d.splice(x,1);
+    }
+    
+    const cm = document.querySelectorAll(".centermid .digit");
+    const e = [1,2,3,4,5,6,7,8,9];
+    for (let i = 0; i < cm.length; i++) {
+      x=Math.floor(Math.random() * e.length);
+      cm[i].innerHTML = e[x];
+      e.splice(x,1);
+    }
+    
+    const cr = document.querySelectorAll(".centerright .digit");
+    const f = [1,2,3,4,5,6,7,8,9];
+    for (let i = 0; i < cr.length; i++) {
+      x=Math.floor(Math.random() * f.length);
+      cr[i].innerHTML = f[x];
+      f.splice(x,1);
+    }
+
+    const dl = document.querySelectorAll(".downleft .digit");
+    const g = [1,2,3,4,5,6,7,8,9];
+    for (let i = 0; i < dl.length; i++) {
+      x=Math.floor(Math.random() * g.length);
+      dl[i].innerHTML = g[x];
+      g.splice(x,1);
+    }
+    
+    const dm = document.querySelectorAll(".downmid .digit");
+    const h = [1,2,3,4,5,6,7,8,9];
+    for (let i = 0; i < dm.length; i++) {
+      x=Math.floor(Math.random() * h.length);
+      dm[i].innerHTML = h[x];
+      h.splice(x,1);
+    }
+    
+    const dr = document.querySelectorAll(".downright .digit");
+    const k = [1,2,3,4,5,6,7,8,9];
+    for (let i = 0; i < dr.length; i++) {
+      x=Math.floor(Math.random() * k.length);
+      dr[i].innerHTML = k[x];
+      k.splice(x,1);
+    }
+    // for (let i = 0; i < tl.length; i++) {
+    //   document.getElementById("d").innerHTML += tl[i].innerHTML;
+    // }
+    
+      const collection = document.getElementsByClassName("digit");
+      // for (let i = 0; i < collection.length; i++) {
+      //   collection[i].innerHTML = Math.floor(Math.random() * 10);
+      // }
+      for (let i = 0; i < collection.length; i++) {
+        collection[i].addEventListener('click', myF);
+        function myF(){
+          document.getElementById("d").innerHTML += collection[i].innerHTML;
+        }
+      }
+       const elem=[];
+       for(let i=0; i<tl.length; i++){
+        elem.push(tl[i].innerHTML);
+       }
+       for(let i=0; i<tl.length; i++){
+        elem.push(tm[i].innerHTML);
+       }
+       for(let i=0; i<tl.length; i++){
+        elem.push(tr[i].innerHTML);
+       }
+       for(let i=0; i<cl.length; i++){
+        elem.push(cl[i].innerHTML);
+       }
+       for(let i=0; i<tl.length; i++){
+        elem.push(cm[i].innerHTML);
+       }
+       for(let i=0; i<tl.length; i++){
+        elem.push(cr[i].innerHTML);
+       }
+       for(let i=0; i<tl.length; i++){
+        elem.push(dl[i].innerHTML);
+       }
+       for(let i=0; i<tl.length; i++){
+        elem.push(dm[i].innerHTML);
+       }
+       for(let i=0; i<tl.length; i++){
+        elem.push(dr[i].innerHTML);
+       }
+      let t="The elements are: ";
+      document.getElementById("z").innerHTML = t + elem;
+    </script>
+    
+
+    <form>
+        <button type="button" >Login</button>
+    </form>
+<script>
+  function back() {
+    var value = document.getElementById("d").innerHTML;
+    document.getElementById("d").innerHTML = value.substr(0, value.length - 1);
+}
+</script>
+
+</body>
+</html>
