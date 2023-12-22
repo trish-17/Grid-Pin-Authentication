@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Reg.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+    <form> 
+        <label for="Username">Username:</label> 
+        <input id="u" type="text" placeholder="Enter Username" >
+        <br>
+        <br>
+        <label for="pin size">Pin size:</label>
+        <select name="Size" id="size">
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        </select>
+    </form>
+
+    <div class="container">
+        <div class="row">
+          <div class="digit" > top left 
+          </div>
+          <div class="digit" > center left
+          </div>
+          <div class="digit"> down left
+          </div>
+        </div>
+        <div class="row">
+            <div class="digit" > top mid
+            </div>
+            <div class="digit" > center mid
+            </div>
+            <div class="digit"> down mid
+            </div>
+          </div>
+          <div class="row">
+            <div class="digit" > top right
+            </div>
+            <div class="digit" > center right
+            </div>
+            <div class="digit"> down right
+            </div>
+          </div>
+    </div>
+    <br>
+    
+    <p id="d"></p>
+    <script>
+      let text="You have chosen:"
+      const collection = document.getElementsByClassName("digit");
+      for (let i = 0; i < collection.length; i++) {
+        collection[i].addEventListener('click', myF);
+        function myF(){
+          document.getElementById("d").innerHTML = text+collection[i].innerHTML;
+          collection[i].style.backgroundColor ='green';
+          collection[i].style.color = 'white';
+          for(let j=0; j<collection.length; j++){
+            if(j!=i){
+              collection[j].style.backgroundColor ='white';
+              collection[j].style.color = 'black';
+            }
+          }
+        }
+      }
+    </script>
+    <br>
+    <form><button type="button">Register</button></form>
+    
+</body>
+</html>
